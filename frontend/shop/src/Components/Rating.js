@@ -36,7 +36,9 @@ export default function Rating(props) {
                 style={{ cursor: "pointer" }}
                 size={50}
                 color={
-                  currentRating <= (hover || props.rating) ? "yellow" : "grey"
+                  currentRating <= (hover || props.rating)
+                    ? "yellow"
+                    : "darkgrey"
                 }
                 onMouseEnter={() => setHover(currentRating)}
                 onMouseLeave={() => setHover(null)}

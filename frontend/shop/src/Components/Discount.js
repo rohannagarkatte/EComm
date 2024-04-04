@@ -9,20 +9,14 @@ import Typography from "@mui/material/Typography";
 export default function Discount(props) {
   console.log("hello1231", props.dis);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, backgroundColor: "cyan" }}>
       {/* <CardMedia
         sx={{ height: 140 }}
         image="/static/images/cards/contemplative-reptile.jpg"
         title="green iguana"
       /> */}
       <CardContent color={"blue"}>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-          color={"blue"}
-          bgcolor={"greenyellow"}
-        >
+        <Typography gutterBottom variant="h5" component="div" color={"blue"}>
           Discount = {props.dis}%
         </Typography>
         {/* <Typography variant="body2" color="text.secondary">

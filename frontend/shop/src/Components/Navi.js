@@ -1,13 +1,21 @@
 import React from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 export default function Navi() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+  const navistyle = ({ isActive }) => {
+    return {
+      color: "darkblue",
+      textDecoration: "none",
+      fontWeight: isActive ? "bold" : "normal",
+    };
+  };
   return (
     <div>
       <header
         class="header"
         style={{
           display: "flex",
+          backgroundColor: "aqua",
           flexdirection: "column",
           alignitems: "center",
           paddingTop: ".5em",
@@ -18,7 +26,7 @@ export default function Navi() {
           borderRadius: "5px",
         }}
       >
-        <h3 class="logo">Ecom</h3>
+        <h3 style={{ margin: 10, fontWeight: "bold" }}>Ecom</h3>
         <div className="container">
           <ul
             class="main-nav"
@@ -32,34 +40,26 @@ export default function Navi() {
             }}
           >
             <li style={{ margin: 15 }}>
-              {/* <NavLink
-                to="/"
-                style={{ textDecoration: "none", fontWeight: "bold" }}
-              > */}
-              Home
-              {/* </NavLink> */}
+              <NavLink to="/" style={navistyle}>
+                Home
+              </NavLink>
             </li>
             <li style={{ margin: 15 }}>
-              <NavLink
-                to="/calcDiscount"
-                style={{ textDecoration: "none", fontWeight: "bold" }}
-              >
+              <NavLink to="/calcDiscount" style={navistyle}>
                 {" "}
                 Calculate Discount{" "}
               </NavLink>
-              {/* </NavLink> */}
-              {/* <button onClick={() => navigate("/calcDiscount")}>
-                Calculate Discount &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              </button> */}
             </li>
             <li style={{ margin: 15 }}>
-              {/* <a href="#" style={{ textDecoration: "none", fontWeight: "bold" }}> */}
-              Contact
-              {/* </a> */}
+              <NavLink to="/contact" style={navistyle}>
+                {" "}
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>
       </header>
+      <footer style={{ backgroundColor: "aqua" }}></footer>
     </div>
   );
 }

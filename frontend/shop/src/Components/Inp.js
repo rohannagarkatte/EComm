@@ -107,13 +107,14 @@ export default function Inp() {
           //   console.log("error");
           // }
           className="btn btn-primary"
+          style={{ backgroundColor: "darkblue" }}
         >
           {" "}
           Submit
         </button>
 
         <button
-          style={{ float: "left" }}
+          style={{ float: "right", margin: 5 }}
           onClick={() => {
             setRating(0);
             setans(0);
@@ -132,6 +133,13 @@ export default function Inp() {
         <p>ratin={rating}</p> */}
       </div>
       {/* </div> */}
+      <h7 style={{ margin: 15 }}>
+        {" "}
+        ( The discount is currently calculated by just adding the 3 values in
+        the backend which is written in python and connected using flask. Based
+        on the requirement the backend can be developed to generate the required
+        discount rates )
+      </h7>
     </div>
   );
 }

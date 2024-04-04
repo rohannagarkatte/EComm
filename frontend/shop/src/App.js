@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./Components/Navbar";
 import Inp from "./Components/Inp";
 import Navi from "./Components/Navi";
 import { useState } from "react";

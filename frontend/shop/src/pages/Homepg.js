@@ -4,7 +4,7 @@ import Navi from "../Components/Navi";
 
 export default function Homepg() {
   return (
-    <div>
+    <div style={{ backgroundColor: "darkcyan" }}>
       <Home />
     </div>
   );
