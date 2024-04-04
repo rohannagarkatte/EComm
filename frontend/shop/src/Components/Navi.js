@@ -1,7 +1,6 @@
 import React from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Navi() {
-  // const navigate = useNavigate();
   const navistyle = ({ isActive }) => {
     return {
       color: "darkblue",

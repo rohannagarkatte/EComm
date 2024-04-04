@@ -8,15 +8,12 @@ export default function Inp() {
   const [pri, setpri] = useState("0");
   const [ans, setans] = useState("0");
   return (
-    // <div style={{ display: 'inline-block' }}>
-    // <div style={{ display: "flex" }}>
     <div
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        // height: "100vh",
       }}
     >
       <Rating rating={rating} setRating={setRating} />
@@ -38,10 +35,8 @@ export default function Inp() {
             placeholder="Enter rating count"
           />
         </div>
-        {/* <div style={{ display: "flex", alignItems: "center" }}> */}
         <br />
         <div>
-          {/* <label style={{ fontSize: "20px" }}>Actual Price:</label> */}
           <label style={{ fontSize: "19px" }}>
             <span style={{ marginRight: "5px" }}>Actual</span>
             <span>Price: </span>
@@ -62,23 +57,6 @@ export default function Inp() {
       <div style={{ display: "inline-block" }}>
         <button
           onClick={() => {
-            // try {
-            //   fetch("http://localhost:5000/url", {
-
-            //       'method':'POST',
-            //   headers: {
-            //       "Content-Type": "application/json",
-            //     },
-            //     body: JSON.stringify({
-            //       // "Rate": document.getElementById("rate").textContent,
-            //       "Rate": rt,
-            //       // "Price": document.getElementById("price").textContent
-            //       "Price": pri
-            //     })
-            //   }).then((res) => {
-            //     console.log(res.text());
-            //     setans(res.text()+" ")
-            //   });;
             try {
               fetch("http://localhost:5000/url", {
                 method: "POST",
@@ -92,20 +70,16 @@ export default function Inp() {
                 }),
               })
                 .then((res) => {
-                  return res.text(); // Convert response to text
+                  return res.text();
                 })
                 .then((text) => {
                   setans(text);
-                  console.log(ans); // Log the response text to the console
-                  // Set the response text as the value of the ans state variable
+                  console.log(ans);
                 });
             } catch (error) {
               console.error("Error occurred:", error);
             }
           }}
-          // catch (err) {
-          //   console.log("error");
-          // }
           className="btn btn-primary"
           style={{ backgroundColor: "darkblue" }}
         >
@@ -126,13 +100,9 @@ export default function Inp() {
         </button>
       </div>
       <br />
-      {/* <div style={{ display: "inline-block" }}> */}
       <div>
         <Discount dis={ans} />
-        {/* Discount=<p>{ans}%</p>
-        <p>ratin={rating}</p> */}
       </div>
-      {/* </div> */}
       <h7 style={{ margin: 15 }}>
         {" "}
         ( The discount is currently calculated by just adding the 3 values in

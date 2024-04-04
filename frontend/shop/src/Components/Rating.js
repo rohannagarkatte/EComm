@@ -50,9 +50,3 @@ export default function Rating(props) {
     </>
   );
 }
-{
-  /* <p margin-right="50%" margin-left="50%" align="right">
-{" "}
-Rating={props.rating}
-</p> */
-}
