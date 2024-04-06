@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/EComm/static/css/main.589d5112.css",
+    "main.js": "/EComm/static/js/main.cc441460.js",
+    "static/js/453.0f4552a2.chunk.js": "/EComm/static/js/453.0f4552a2.chunk.js",
+    "static/media/logo.svg": "/EComm/static/media/logo.28940f2eb9e7e0ce64c1805c78244bc5.svg",
+    "index.html": "/EComm/index.html",
+    "main.589d5112.css.map": "/EComm/static/css/main.589d5112.css.map",
+    "main.cc441460.js.map": "/EComm/static/js/main.cc441460.js.map",
+    "453.0f4552a2.chunk.js.map": "/EComm/static/js/453.0f4552a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.589d5112.css",
+    "static/js/main.cc441460.js"
+  ]
+}
